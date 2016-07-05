@@ -2,29 +2,41 @@
 <head>
 	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/css:index.css">	
 	<script src="funcs.js"></script>
+	<script src = 'js/bootstrap.js'></script> 
 </head>
 
 <body>
-<br>Welcome to the Guessing Game!
+<div class = 'container'> 
+<div class = 'row text-center'>
+<br><h2>Welcome to the Guessing Game!</h2>
 
 <form name="gameForm">
+<div class = 'row well well-lg'>
 <h3>
 	<p/>Guess the Number
 </h3>
 	<input type="text" id="guessNumber">
 	
+	<div class = "row features">
 	<p>
-	<button name="btnSubmit" type="button" onclick="checkNumber()">Submit</button>
+	<button name="btnSubmit" type="button" class = 'btn btn-primary' onclick="checkNumber()">Submit </button>
+	<i class = 'glyphicon glyphicon-hand-left'></i>
 
+	
 	<p id="result"/>
 	<p/>
+	</div>
+	</div>
 
-	<button name="btnPlayAgain" type="button" onclick="playAgain()">Play Again</button>
 
-	<button name="btngiveHint" type="button" onclick="giveHint()">Give me Hint!!</button>
+	<button name="btnPlayAgain" type="button" class = 'btn btn-info' onclick="playAgain()">Play Again</button>
+
+	<button name="btngiveHint" type="button" class = 'btn btn-info' onclick="giveHint()">Give me Hint</button>
 </form>
-
+ </div>
+ </div>
 </body>
 
 </html>
