@@ -1,42 +1,44 @@
 <html>
 <head>
-	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/css:index.css">	
-	<script src="funcs.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="js/guessingGame.js"></script>
 	<script src = 'js/bootstrap.js'></script> 
 </head>
 
 <body>
-<div class = 'container'> 
-<div class = 'row text-center'>
-<br><h2>Welcome to the Guessing Game!</h2>
+	<div class = 'container'> 
+		<div class = 'row text-center'>
+			<br><h2>Welcome to the Guessing Game!</h2>
 
-<form name="gameForm">
-<div class = 'row well well-lg'>
-<h3>
-	<p/>Guess the Number
-</h3>
-	<input type="text" id="guessNumber">
-	
-	<div class = "row features">
-	<p>
-	<button name="btnSubmit" type="button" class = 'btn btn-primary' onclick="checkNumber()">Submit </button>
-	<i class = 'glyphicon glyphicon-hand-left'></i>
+			<form name="gameForm">
+				<div class = 'row well well-lg'>
+					<h3><p/>Guess the Number</h3>
+					<input type="text" id="guessNumber"/>
+			
+					<div class = "row features">
+						<p>
+						<div class='submit'>
+							<button name="btnSubmit" type="button" class='btn btn-primary btn-submit'>Submit</button>
+							<i class = 'glyphicon glyphicon-hand-left'></i>
+						</div>
+							<p id="result"/>
+						<p/>
 
-	
-	<p id="result"/>
-	<p/>
-	</div>
-	</div>
+					</div>
+				</div>
 
+				<div class='playagain''>
+				<button name="btnPlayAgain" type="button" class='btn btn-info'>Play Again</button>
+				</div>
 
-	<button name="btnPlayAgain" type="button" class = 'btn btn-info' onclick="playAgain()">Play Again</button>
-
-	<button name="btngiveHint" type="button" class = 'btn btn-info' onclick="giveHint()">Give me Hint</button>
-</form>
- </div>
- </div>
+				<div class='hint'>
+				<button name="btngiveHint" type="button" class='btn btn-info'>Give me Hint</button>
+				</div>
+			</form>
+ 		</div>
+ 	</div>
 </body>
 
 </html>
